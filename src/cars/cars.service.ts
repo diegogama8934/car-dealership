@@ -19,12 +19,19 @@ export class CarsService {
       model: 'Cherokee',
     },
   ];
+
   getAllCars() {
     return this.cars;
   }
+
   getCarById(id: number) {
     const car = this.cars[id - 1];
     if (!car) throw new NotFoundException(`Car with ID '${id}' doesn´t exist`);
+    return car;
+  }
+
+  saveCar(newCar) {
+    const car = [...this.cars, newCar];
     return car;
   }
 }
