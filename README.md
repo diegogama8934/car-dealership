@@ -10,6 +10,13 @@
 $ npm install
 ```
 
+## Create a resource with
+
+```bash
+$ nest g resource <resourceName> --no-spec
+```
+
+
 ## Compile and run the project
 
 ```bash
