@@ -15,7 +15,7 @@ $ npm install
 ```bash
 $ nest g resource <resourceName> --no-spec
 ```
-
+--no-spec with the objective of no creating the file to test the resource
 
 ## Compile and run the project
 
