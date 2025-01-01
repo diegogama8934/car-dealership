@@ -54,4 +54,8 @@ export class BrandsService {
     this.brands = updatedBrands;
     return this.brands;
   }
+
+  fillBrandsWithSeedData(brands: Brand[]) {
+    this.brands = brands;
+  }
 }
